@@ -37,6 +37,11 @@ const Team: React.FC = () => {
             name: 'Imen Edhri',
             role: t('team.roles.itEngineer'),
         },
+        {
+            imageUrl: 'https://media.licdn.com/dms/image/v2/D4D35AQHuUnX04Y75mA/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1735951655031?e=1764799200&v=beta&t=zA0OIDugBMj4KBDhNxbq-pone9fGtkYSzAzixZq82Wo',
+            name: 'Mohamed Bouraoui',
+            role: t('team.roles.itEngineer'),
+        },
     ];
 
     return (
@@ -50,7 +55,7 @@ const Team: React.FC = () => {
                         {t('team.subtitle')}
                     </p>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {teamMembers.map((member, index) => (
                         <TeamMemberCard key={index} {...member} />
                     ))}
